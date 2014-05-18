@@ -5,11 +5,13 @@
 
 ## Usage
 
-To run the example project; clone the repo, and run `pod install` from the Example directory first.
+ESConveyorBelt allows you to easily create parallax-like effects for a tutorial screen for iOS. 
 
-!(Sample)[https://raw.githubusercontent.com/escoz/ESConveyorBelt/master/ESConveyorBelt.gif]
+Included is a sample app with some of the effects possible:
 
-## Requirements
+![Sample](https://raw.githubusercontent.com/escoz/ESConveyorBelt/master/ESConveyorBelt.gif)
+
+To run the example project; clone the repo and open the project under the Example folder.
 
 ## Installation
 
