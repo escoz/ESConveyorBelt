@@ -9,8 +9,7 @@ Pod::Spec.new do |s|
 			More info to come.
 
                        DESC
-  s.homepage         = "https://github.com/escoz/ESConveyorBelt"
-  s.screenshots      = ""
+  s.homepage         = "https://github.com/escoz/ESConveyorBelt/"
   s.license          = 'MIT'
   s.author           = { "Eduardo Scoz" => "eduardoscoz@gmail.com" }
   s.source           = { :git => "https://github.com/escoz/ESConveyorBelt.git", :tag => s.version.to_s }
