@@ -7,39 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C50E020FD2CB2064F4B0EF8 /* beach_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C50EF9E04F6011E35754C82 /* beach_bg@2x.png */; };
+		5C50E0C15CF437AA9A5F2D8F /* flip_flops@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C50E08CD070481394CAA3B5 /* flip_flops@2x.png */; };
 		5C50E139972265785F001032 /* ESConveyorFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C50ECFF9BEEFB6C8CE4FC04 /* ESConveyorFlowLayout.m */; };
 		5C50E16E4A9089BDD80EB431 /* ESConveyorEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C50E9A997E6D3AD1E57ABE7 /* ESConveyorEffects.m */; };
+		5C50E196610A747067C9AED5 /* beach_chair@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C50E41F1FCB99687E967667 /* beach_chair@2x.png */; };
 		5C50E28B78805FC683409F94 /* ESConveyorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C50E7033173556B4B0A68B5 /* ESConveyorController.m */; };
 		5C50E2C4BDE4E48E00F07172 /* ESConveyorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C50EB7EFF57F74B7F5BD3FA /* ESConveyorView.m */; };
 		5C50E3725B462F4ED683BF46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C50E3A2A0558BCFA385E131 /* main.m */; };
 		5C50E3A50DDE10A43DB415FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C50E6F91BE5430E77323697 /* Foundation.framework */; };
 		5C50E3FD49BDA985642DF2DC /* ESConveyorPageControlElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C50E6192B7D2EA8CACF096D /* ESConveyorPageControlElement.m */; };
 		5C50E4A75EA965F8058E5651 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C50EA631A7006F9EE665926 /* UIKit.framework */; };
+		5C50E4B83D70025E0520721D /* surfboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C50E3A69CB1BBC0F546B0B0 /* surfboard@2x.png */; };
+		5C50E52AC29FEE239B3D3195 /* cocktail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C50EA4406E260D61CB14826 /* cocktail@2x.png */; };
+		5C50E56EEAA2F86B3ECCFC53 /* flippers@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C50E549A40F2E0F0BC75577 /* flippers@2x.png */; };
 		5C50E7DD22A806FDD18B9B28 /* ESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C50EA4FDB99C0A04393C187 /* ESAppDelegate.m */; };
 		5C50E83D163DE36FDBDD54B4 /* ESConveyorElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C50E0C2FC2BA18A66FDB9AF /* ESConveyorElement.m */; };
 		5C50E8DA0843E5753A394A78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C50ECFD4B69B4888B56780F /* Images.xcassets */; };
+		5C50E9032ECFA7A858B7A6CA /* umbrella@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C50E1D813238E94ED9CCA55 /* umbrella@2x.png */; };
 		5C50E9D027B9301093289645 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C50E861AB62C806831EC832 /* CoreGraphics.framework */; };
+		5C50EAB26898A9B50D104EB3 /* goldengate@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C50EEE2F4E2C5A6F63B4566 /* goldengate@2x.jpg */; };
+		5C50EB8EE309B5C2B82132C7 /* bacon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C50E6E2CC543456CC0011A5 /* bacon@2x.png */; };
 		5C50EBE4F19D0324AED73B37 /* ESConveyorPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C50E19E8B0F3AE6E7AAEDF3 /* ESConveyorPageCell.m */; };
 		5C50EF5DB9F0713844C02964 /* ESConveyorAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C50EA7FBDB8F1D38DD5C9D6 /* ESConveyorAdapter.m */; };
 		5C50EFCA4A224E244BB725A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C50E8D24FC729943FB5C7E9 /* InfoPlist.strings */; };
 		D813CF5C19282F3600DC2A9B /* ESConveyorSample1Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = D813CF5719282F3600DC2A9B /* ESConveyorSample1Builder.m */; };
 		D813CF5D19282F3600DC2A9B /* ESConveyorSample2Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = D813CF5919282F3600DC2A9B /* ESConveyorSample2Builder.m */; };
 		D813CF5E19282F3600DC2A9B /* ESConveyorSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D813CF5B19282F3600DC2A9B /* ESConveyorSampleViewController.m */; };
-		D813CF6119282FD800DC2A9B /* goldengate@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D813CF5F19282FD800DC2A9B /* goldengate@2x.jpg */; };
-		D813CF6219282FD800DC2A9B /* bacon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D813CF6019282FD800DC2A9B /* bacon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5C50E07862D91BB3A5CCA555 /* ESConveyorElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorElement.h; sourceTree = "<group>"; };
+		5C50E08CD070481394CAA3B5 /* flip_flops@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flip_flops@2x.png"; sourceTree = "<group>"; };
 		5C50E0C2FC2BA18A66FDB9AF /* ESConveyorElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorElement.m; sourceTree = "<group>"; };
 		5C50E135279DEB44504105FE /* ESConveyorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorView.h; sourceTree = "<group>"; };
 		5C50E19E8B0F3AE6E7AAEDF3 /* ESConveyorPageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorPageCell.m; sourceTree = "<group>"; };
+		5C50E1D813238E94ED9CCA55 /* umbrella@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "umbrella@2x.png"; sourceTree = "<group>"; };
 		5C50E21E0258796FF1CB94FA /* ESConveyorEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorEffects.h; sourceTree = "<group>"; };
 		5C50E356FD1D084DF4110C6E /* ESConveyorPageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorPageCell.h; sourceTree = "<group>"; };
 		5C50E3A2A0558BCFA385E131 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5C50E3A69CB1BBC0F546B0B0 /* surfboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "surfboard@2x.png"; sourceTree = "<group>"; };
+		5C50E41F1FCB99687E967667 /* beach_chair@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beach_chair@2x.png"; sourceTree = "<group>"; };
+		5C50E549A40F2E0F0BC75577 /* flippers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flippers@2x.png"; sourceTree = "<group>"; };
 		5C50E6192B7D2EA8CACF096D /* ESConveyorPageControlElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorPageControlElement.m; sourceTree = "<group>"; };
 		5C50E65DADFD98E16DBAA335 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C50E69C91A3CC5FD289BFEA /* ESConveyorAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorAdapter.h; sourceTree = "<group>"; };
+		5C50E6E2CC543456CC0011A5 /* bacon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bacon@2x.png"; sourceTree = "<group>"; };
 		5C50E6F91BE5430E77323697 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5C50E7033173556B4B0A68B5 /* ESConveyorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorController.m; sourceTree = "<group>"; };
 		5C50E723FD6C2C003B350647 /* ESConveyorBeltSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ESConveyorBeltSample-Prefix.pch"; sourceTree = "<group>"; };
@@ -48,6 +61,7 @@
 		5C50E8F9077BADEC298B4E11 /* ESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESAppDelegate.h; sourceTree = "<group>"; };
 		5C50E9A997E6D3AD1E57ABE7 /* ESConveyorEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorEffects.m; sourceTree = "<group>"; };
 		5C50E9E8CE9B4CE04D834359 /* ESConveyorPageControlElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorPageControlElement.h; sourceTree = "<group>"; };
+		5C50EA4406E260D61CB14826 /* cocktail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cocktail@2x.png"; sourceTree = "<group>"; };
 		5C50EA4FDB99C0A04393C187 /* ESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESAppDelegate.m; sourceTree = "<group>"; };
 		5C50EA631A7006F9EE665926 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5C50EA7FBDB8F1D38DD5C9D6 /* ESConveyorAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorAdapter.m; sourceTree = "<group>"; };
@@ -57,15 +71,15 @@
 		5C50ED813768FE7022AA4E8C /* ESConveyorBeltSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ESConveyorBeltSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C50EE81817E3B23B30CB063 /* ESConveyorBeltSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ESConveyorBeltSample-Info.plist"; sourceTree = "<group>"; };
 		5C50EE8456F1D2D6CF064685 /* ESConveyorBelt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorBelt.h; sourceTree = "<group>"; };
+		5C50EEE2F4E2C5A6F63B4566 /* goldengate@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "goldengate@2x.jpg"; sourceTree = "<group>"; };
 		5C50EF18D986234DF9E4CAFA /* ESConveyorFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorFlowLayout.h; sourceTree = "<group>"; };
+		5C50EF9E04F6011E35754C82 /* beach_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beach_bg@2x.png"; sourceTree = "<group>"; };
 		D813CF5619282F3600DC2A9B /* ESConveyorSample1Builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorSample1Builder.h; sourceTree = "<group>"; };
 		D813CF5719282F3600DC2A9B /* ESConveyorSample1Builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorSample1Builder.m; sourceTree = "<group>"; };
 		D813CF5819282F3600DC2A9B /* ESConveyorSample2Builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorSample2Builder.h; sourceTree = "<group>"; };
 		D813CF5919282F3600DC2A9B /* ESConveyorSample2Builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorSample2Builder.m; sourceTree = "<group>"; };
 		D813CF5A19282F3600DC2A9B /* ESConveyorSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorSampleViewController.h; sourceTree = "<group>"; };
 		D813CF5B19282F3600DC2A9B /* ESConveyorSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorSampleViewController.m; sourceTree = "<group>"; };
-		D813CF5F19282FD800DC2A9B /* goldengate@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "goldengate@2x.jpg"; path = "../../../../../../Library/Application Support/iPhone Simulator/7.1/Applications/63E3CD40-0644-457B-85FB-A77F2869512A/ESConveyorBelt.app/goldengate@2x.jpg"; sourceTree = "<group>"; };
-		D813CF6019282FD800DC2A9B /* bacon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bacon@2x.png"; path = "../../../../../../Library/Application Support/iPhone Simulator/7.1/Applications/63E3CD40-0644-457B-85FB-A77F2869512A/ESConveyorBelt.app/bacon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +153,6 @@
 		5C50EB56D777807589C813EB /* ESConveyorBeltSample */ = {
 			isa = PBXGroup;
 			children = (
-				D813CF5F19282FD800DC2A9B /* goldengate@2x.jpg */,
-				D813CF6019282FD800DC2A9B /* bacon@2x.png */,
 				D813CF5619282F3600DC2A9B /* ESConveyorSample1Builder.h */,
 				D813CF5719282F3600DC2A9B /* ESConveyorSample1Builder.m */,
 				D813CF5819282F3600DC2A9B /* ESConveyorSample2Builder.h */,
@@ -151,6 +163,7 @@
 				5C50E8F9077BADEC298B4E11 /* ESAppDelegate.h */,
 				5C50EA4FDB99C0A04393C187 /* ESAppDelegate.m */,
 				5C50ECFD4B69B4888B56780F /* Images.xcassets */,
+				5C50EEBB69776D991F90C88C /* Resources */,
 			);
 			path = ESConveyorBeltSample;
 			sourceTree = "<group>";
@@ -163,6 +176,22 @@
 				5C50EB56D777807589C813EB /* ESConveyorBeltSample */,
 				5C50EB15AB9524975ED7CA15 /* Classes */,
 			);
+			sourceTree = "<group>";
+		};
+		5C50EEBB69776D991F90C88C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C50E6E2CC543456CC0011A5 /* bacon@2x.png */,
+				5C50EA4406E260D61CB14826 /* cocktail@2x.png */,
+				5C50E549A40F2E0F0BC75577 /* flippers@2x.png */,
+				5C50E1D813238E94ED9CCA55 /* umbrella@2x.png */,
+				5C50E3A69CB1BBC0F546B0B0 /* surfboard@2x.png */,
+				5C50E08CD070481394CAA3B5 /* flip_flops@2x.png */,
+				5C50EEE2F4E2C5A6F63B4566 /* goldengate@2x.jpg */,
+				5C50E41F1FCB99687E967667 /* beach_chair@2x.png */,
+				5C50EF9E04F6011E35754C82 /* beach_bg@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,10 +244,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D813CF6219282FD800DC2A9B /* bacon@2x.png in Resources */,
 				5C50EFCA4A224E244BB725A6 /* InfoPlist.strings in Resources */,
 				5C50E8DA0843E5753A394A78 /* Images.xcassets in Resources */,
-				D813CF6119282FD800DC2A9B /* goldengate@2x.jpg in Resources */,
+				5C50EB8EE309B5C2B82132C7 /* bacon@2x.png in Resources */,
+				5C50E52AC29FEE239B3D3195 /* cocktail@2x.png in Resources */,
+				5C50E56EEAA2F86B3ECCFC53 /* flippers@2x.png in Resources */,
+				5C50E9032ECFA7A858B7A6CA /* umbrella@2x.png in Resources */,
+				5C50E4B83D70025E0520721D /* surfboard@2x.png in Resources */,
+				5C50E0C15CF437AA9A5F2D8F /* flip_flops@2x.png in Resources */,
+				5C50EAB26898A9B50D104EB3 /* goldengate@2x.jpg in Resources */,
+				5C50E196610A747067C9AED5 /* beach_chair@2x.png in Resources */,
+				5C50E020FD2CB2064F4B0EF8 /* beach_bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

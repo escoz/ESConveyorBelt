@@ -14,9 +14,29 @@
 {
     self = [super init];
     if (self) {
-        self.font = [UIFont boldSystemFontOfSize:38];
-        self.textColor = [UIColor blueColor];
+        self.font = [UIFont fontWithName:@"Noteworthy-Bold" size:40];
         self.textAlignment = NSTextAlignmentCenter;
+        self.layer.shadowColor = [UIColor colorWithRed:0.6291 green:0.6290 blue:0.6291 alpha:1.0000].CGColor;
+        self.layer.shadowOffset = CGSizeMake(2, 2);
+        self.layer.shadowRadius = 1.0f;
+        self.layer.shadowOpacity = 1.0f;
+    }
+    return self;
+}
+@end
+
+@interface ESCloseButton : UIButton
+@end
+@implementation ESCloseButton
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        self.titleLabel.font = [UIFont fontWithName:@"Noteworthy-Bold" size:40];
+        self.layer.shadowColor = [UIColor colorWithRed:0.6291 green:0.6290 blue:0.6291 alpha:1.0000].CGColor;
+        self.layer.shadowOffset = CGSizeMake(2, 2);
+        self.layer.shadowRadius = 1.0f;
+        self.layer.shadowOpacity = 1.0f;
     }
     return self;
 }
@@ -28,89 +48,67 @@
 
 + (NSArray *)buildTutorialWithTarget:(id)target
 {
+    [[UIButton appearance] setTitleColor:[UIColor colorWithRed:0.4237 green:0.2847 blue:0.1927 alpha:1.0000] forState:UIControlStateNormal];
 
-    [UIPageControl appearance].pageIndicatorTintColor = [UIColor blueColor];
-    [UIPageControl appearance].currentPageIndicatorTintColor = [UIColor greenColor];
+    [UIPageControl appearance].pageIndicatorTintColor = [UIColor colorWithRed:0.4237 green:0.2847 blue:0.1927 alpha:1.0000];
+    [UIPageControl appearance].currentPageIndicatorTintColor = [UIColor colorWithRed:0.1328 green:0.6916 blue:0.8866 alpha:1.0000];
 
-    ESConveyorElement *bt1 = [ESConveyorElement elementForButtonOfClass:[UIButton class] title:@"This is a button to close the tutorial" target:target action:@selector(buttonAction:) center:CGPointMake(270, 540)];
-    [bt1 setInEffects:@[@(ESConveyorEffectEdgeBottom)] outEffects:@[@(ESConveyorEffectEdgeBottom)]];
-    bt1.inPage = 1;
-    bt1.outPage = 2;
-    ESConveyorElement *title1 = [ESConveyorElement elementForLabelOfClass:[ESTitleLabel class] text:@"This is page 1" center:CGPointMake(270, 60) size:CGSizeMake(440, 60)];
+
+    ESConveyorElement *title1 = [ESConveyorElement elementForLabelOfClass:[ESTitleLabel class] text:@"It's beach time!" center:CGPointMake(270, 60) size:CGSizeMake(440, 60)];
     [title1 setInEffects:@[@(ESConveyorEffectEdgeTop)] outEffects: @[@(ESConveyorEffectFade)]];
-    title1.inPage = 0;
-    title1.outPage = 1;
-    ESConveyorElement *title2 = [ESConveyorElement elementForLabelOfClass:[ESTitleLabel class] text:@"Changed Text" center:CGPointMake(270, 60) size:CGSizeMake(440, 60)];
+    title1.page = 0;
+    ((UILabel *)title1.view).textColor = [UIColor colorWithRed:0.4237 green:0.2847 blue:0.1927 alpha:1.0000];
+
+    ESConveyorElement *title2 = [ESConveyorElement elementForLabelOfClass:[ESTitleLabel class] text:@"How about a Drink?" center:CGPointMake(270, 60) size:CGSizeMake(440, 60)];
     [title2 setInEffects:@[@(ESConveyorEffectFade)] outEffects:@[@(ESConveyorEffectEdgeTop)]];
-    title2.inPage = 2;
-    title2.outPage = 3;
+    title2.page = 1;
+    ((UILabel *)title2.view).textColor = [UIColor colorWithRed:0.4237 green:0.2847 blue:0.1927 alpha:1.0000];
 
-    ESConveyorElement *p1 = [ESConveyorElement elementForImageNamed:@"goldengate.jpg"];
-    p1.center = CGPointMake(p1.center.x - 80, p1.center.y);
-    [p1 setInEffects:@[@(ESConveyorEffectFade), @(ESConveyorEffectParallax20)] outEffects:@[@(ESConveyorEffectParallax20), @(ESConveyorEffectFade)]];
-    p1.paginationEffects = @[@(ESConveyorEffectParallax20)];
-    p1.inPage = 0;
-    p1.outPage = 2;
+    ESConveyorElement *title3 = [ESConveyorElement elementForLabelOfClass:[ESTitleLabel class] text:@"Take your shoes off!" center:CGPointMake(270, 520) size:CGSizeMake(440, 60)];
+    [title3 setInEffects:@[@(ESConveyorEffectEdgeBottom), @(ESConveyorEffectFade)] outEffects:@[@(ESConveyorEffectEdgeLeft)]];
+    title3.page = 2;
+    ((UILabel *)title3.view).textColor = [UIColor colorWithRed:0.1328 green:0.6916 blue:0.8866 alpha:1.0000];
 
-    ESConveyorElement *p2 = [ESConveyorElement elementForImageNamed:@"bacon" center:CGPointMake(400, 100)];
-    [p2 setEffects:@[@(ESConveyorEffectFade), @(ESConveyorEffectParallax20)]];
-    p2.paginationEffects = @[ @(ESConveyorEffectParallax20)];
-    p2.inPage = 0;
-    p2.outPage = 3;
+    ESConveyorElement *title4 = [ESConveyorElement elementForLabelOfClass:[ESTitleLabel class] text:@"Lets ride the waves, man!" center:CGPointMake(270, 520) size:CGSizeMake(440, 60)];
+    [title4 setInEffects:@[@(ESConveyorEffectEdgeRight)] outEffects:@[@(ESConveyorEffectFade)]];
+    title4.page = 3;
+    ((UILabel *)title4.view).textColor = [UIColor colorWithRed:0.1328 green:0.6916 blue:0.8866 alpha:1.0000];
 
-    ESConveyorElement *p3 = [ESConveyorElement elementForImageNamed:@"bacon" center:CGPointMake(400, 240)];
-    [p3 setEffects:@[@(ESConveyorEffectParallax33), @(ESConveyorEffectFade)]];
-    p3.paginationEffects = @[ @(ESConveyorEffectParallax33)];
-    p3.inPage = 0;
-    p3.outPage = 2;
+    ESConveyorElement *bg = [ESConveyorElement elementForImageNamed:@"beach_bg"];
+    bg.inEffects = @[@(ESConveyorEffectParallax10), @(ESConveyorEffectFade)];
+    bg.outEffects = @[@(ESConveyorEffectParallax10), @(ESConveyorEffectFade)];
+    bg.paginationEffects = @[@(ESConveyorEffectParallax10)];
+    bg.inPage = 0;
+    bg.outPage = 4;
 
-    ESConveyorElement *p4 = [ESConveyorElement elementForImageNamed:@"bacon" center:CGPointMake(400, 380)];
-    [p4 setEffects:@[@(ESConveyorEffectParallax40), @(ESConveyorEffectFade)]];
-    p4.paginationEffects = @[ @(ESConveyorEffectParallax40)];
-    p4.inPage = 0;
-    p4.outPage = 1;
+    ESConveyorElement *img1 = [ESConveyorElement elementForImageNamed:@"umbrella" center:CGPointMake(260, 200)];
+    img1.inEffects = @[@(ESConveyorEffectEdgeBottom), @(ESConveyorEffectFade)];
+    img1.outEffects = @[@(ESConveyorEffectFade)];
+    img1.page = 0;
+    ESConveyorElement *img2 = [ESConveyorElement elementForImageNamed:@"cocktail" center:CGPointMake(150, 200)];
+    img2.inEffects = @[@(ESConveyorEffectEdgeTop), @(ESConveyorEffectFade)];
+    img2.outEffects = @[@(ESConveyorEffectFade)];
+    img2.page = 1;
+    ESConveyorElement *img3 = [ESConveyorElement elementForImageNamed:@"flip_flops" center:CGPointMake(350, 400)];
+    img3.inEffects = @[@(ESConveyorEffectEdgeLeft), @(ESConveyorEffectFade)];
+    img3.outEffects = @[@(ESConveyorEffectFade)];
+    img3.page = 2;
+    ESConveyorElement *img4 = [ESConveyorElement elementForImageNamed:@"surfboard" center:CGPointMake(300, 400)];
+    img4.inEffects = @[@(ESConveyorEffectEdgeRight), @(ESConveyorEffectFade)];
+    img4.outEffects = @[@(ESConveyorEffectFade)];
+    img4.page = 3;
 
-    ESConveyorElement *p5 = [ESConveyorElement elementForImageNamed:@"bacon" center:CGPointMake(400, 520)];
-    [p5 setEffects:@[@(ESConveyorEffectParallax50), @(ESConveyorEffectFade)]];
-    p5.paginationEffects = @[ @(ESConveyorEffectParallax50)];
-    p5.inPage = 0;
-    p5.outPage = 0;
+    ESConveyorElement *btExit = [ESConveyorElement elementForButtonOfClass:[ESCloseButton class] title:@"Lets go!" target:target action:@selector(buttonAction:) center:CGPointMake(270, 240)];
+    [btExit setInEffects:@[@(ESConveyorEffectEdgeBottom)] outEffects:@[@(ESConveyorEffectEdgeBottom)]];
+    btExit.inPage = 4;
+    btExit.outPage = 4;
 
-    ESConveyorElement *p6 = [ESConveyorElement elementForImageNamed:@"bacon" center:CGPointMake(150, 400)];
-    [p6 setEffects:@[@(ESConveyorEffectParallax200), @(ESConveyorEffectFade)]];
-    p6.paginationEffects = @[@(ESConveyorEffectParallax200)];
-    p6.page = 0;
-    p6.outPage = 2;
-
-    ESConveyorElement *p7 = [ESConveyorElement elementForImageNamed:@"bacon" center:CGPointMake(150, 520)];
-    [p7 setEffects:@[@(ESConveyorEffectParallax150), @(ESConveyorEffectFade)]];
-    p7.paginationEffects = @[ @(ESConveyorEffectParallax150)];
-    p7.page = 0;
-    p7.outPage = 2;
-
-    ESConveyorElement *bacon1 = [ESConveyorElement elementForImageNamed:@"bacon" center:CGPointMake(150, 400)];
-    bacon1.inEffects = @[@(ESConveyorEffectEdgeBottom), @(ESConveyorEffectFade)];
-    bacon1.outEffects = @[@(ESConveyorEffectFade)];
-    bacon1.page = 4;
-    ESConveyorElement *bacon2 = [ESConveyorElement elementForImageNamed:@"bacon" center:CGPointMake(150, 200)];
-    bacon2.inEffects = @[@(ESConveyorEffectEdgeTop), @(ESConveyorEffectFade)];
-    bacon2.outEffects = @[@(ESConveyorEffectFade)];
-    bacon2.page = 4;
-    ESConveyorElement *bacon3 = [ESConveyorElement elementForImageNamed:@"bacon" center:CGPointMake(350, 200)];
-    bacon3.inEffects = @[@(ESConveyorEffectEdgeLeft), @(ESConveyorEffectFade)];
-    bacon3.outEffects = @[@(ESConveyorEffectFade)];
-    bacon3.page = 4;
-    ESConveyorElement *bacon4 = [ESConveyorElement elementForImageNamed:@"bacon" center:CGPointMake(350, 400)];
-    bacon4.inEffects = @[@(ESConveyorEffectEdgeRight), @(ESConveyorEffectFade)];
-    bacon4.outEffects = @[@(ESConveyorEffectFade)];
-    bacon4.page = 4;
-
-    ESConveyorPageControlElement *pagination = [[ESConveyorPageControlElement alloc] initWithClass:[UIPageControl class] center:CGPointMake(270, 600)];
+    ESConveyorPageControlElement *pagination = [[ESConveyorPageControlElement alloc] initWithClass:[UIPageControl class] center:CGPointMake(270, 580)];
     pagination.inPage = 0;
     pagination.outPage = 5;
     [pagination setInEffects:@[@(ESConveyorEffectFade)] outEffects:nil];
 
-    NSArray *elements = @[p1, p2, p3, p4, p5, p6, p7, bt1, bacon1, bacon2, bacon3, bacon4, title1, title2, pagination];
+    NSArray *elements = @[bg, title1, img1, title2, img2, title3, img3, title4, img4, pagination, btExit];
     return elements;
 }
 

@@ -18,6 +18,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[ESConveyorSampleViewController alloc] init];
     [self.window makeKeyAndVisible];
+
     return YES;
 }
 

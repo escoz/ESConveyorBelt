@@ -33,11 +33,17 @@
     self.view.tintColor = [UIColor blueColor];
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self performSelector:@selector(handleSample1) withObject:nil afterDelay:0.1];
+}
+
 
 -(void)handleSample1
 {
     NSArray *elements = [ESConveyorSample1Builder buildTutorialWithTarget:self];
-    UIViewController *controller = [[ESConveyorController alloc] initWithPages:6 elements:elements];
+    UIViewController *controller = [[ESConveyorController alloc] initWithPages:5 elements:elements];
     controller.modalPresentationStyle = UIModalPresentationFormSheet;
     [self presentViewController:controller animated:YES completion:nil];
 }
