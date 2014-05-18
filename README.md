@@ -7,6 +7,8 @@
 
 To run the example project; clone the repo, and run `pod install` from the Example directory first.
 
+!(Sample)[https://raw.githubusercontent.com/escoz/ESConveyorBelt/master/ESConveyorBelt.gif]
+
 ## Requirements
 
 ## Installation
@@ -24,3 +26,4 @@ Eduardo Scoz, eduardoscoz@gmail.com
 
 ESConveyorBelt is available under the MIT license. See the LICENSE file for more info.
 
+Icons in the sample from [VisualPharm](http://www.visualpharm.com/vacation_icon_set/)
