@@ -32,4 +32,14 @@
 }
 
 
+- (void)nextPageAction
+{
+    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:self.currentScrollPage+1] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+}
+
+- (NSInteger)currentScrollPage
+{
+    return (NSInteger) roundf(self.collectionView.contentOffset.x/self.collectionView.bounds.size.width);
+}
+
 @end

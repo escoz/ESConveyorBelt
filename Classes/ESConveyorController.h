@@ -12,4 +12,6 @@
 @property(nonatomic, strong) ESConveyorAdapter *adapter;
 
 - (id)initWithPages:(NSInteger)numberOfPages elements:(NSArray *)elements;
+
+- (void)nextPageAction;
 @end

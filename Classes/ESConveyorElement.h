@@ -25,13 +25,15 @@
 + (ESConveyorElement *)elementForImageNamed:(NSString *)string;
 + (ESConveyorElement *)elementForImageNamed:(NSString *)imageName center:(CGPoint)center;
 
++ (ESConveyorElement *)elementForImage:(UIImage *)image center:(CGPoint)center;
+
 + (ESConveyorElement *)elementForButtonOfClass:(Class)pClass title:(NSString *)title target:(id)target action:(SEL)action center:(CGPoint)center;
 + (ESConveyorElement *)elementForLabelOfClass:(Class)pClass text:(NSString *)text center:(CGPoint)center size:(CGSize)size;
 
 - (void)setEffects:(NSArray *)effects;
 
 - (void)setInEffects:(NSArray *)inEffects outEffects:(NSArray *)effects;
-- (void)setPage:(int)page;
+- (void)setPage:(NSUInteger)page;
 
 - (void)updateForPage:(NSUInteger)page totalPages:(NSInteger)pages progress:(CGFloat)progress offset:(CGPoint)offset;
 @end

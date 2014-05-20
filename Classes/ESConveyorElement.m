@@ -23,6 +23,17 @@
     return result;
 }
 
+
++ (ESConveyorElement *)elementForImage:(UIImage *)image center:(CGPoint)center
+{
+    ESConveyorElement *result = [ESConveyorElement new];
+    result.view = [[UIImageView alloc] initWithImage:image];
+    result.center = center;
+    result.size = image.size;
+    result.color = [UIColor clearColor];
+    return result;
+}
+
 + (ESConveyorElement *)elementForView:(UIView *)view center:(CGPoint)center
 {
     ESConveyorElement *result = [ESConveyorElement new];
@@ -81,7 +92,7 @@
     return element;
 }
 
-- (void)setPage:(int)page
+- (void)setPage:(NSUInteger)page
 {
     self.inPage = page;
     self.outPage = page;

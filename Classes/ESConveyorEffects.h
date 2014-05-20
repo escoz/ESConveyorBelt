@@ -10,6 +10,6 @@
 
 @interface ESConveyorEffects : NSObject
 
-- (UICollectionViewLayoutAttributes *)getAttributesForPage:(NSUInteger)page atOffset:(CGPoint)offset pageWidth:(CGSize)pageSize index:(NSInteger)index progress:(CGFloat)progress element:(ESConveyorElement *)element;
+- (UICollectionViewLayoutAttributes *)getAttributesForPage:(NSUInteger)page atOffset:(CGPoint)offset pageWidth:(CGSize)pageSize index:(NSUInteger)index progress:(CGFloat)progress element:(ESConveyorElement *)element;
 
 @end

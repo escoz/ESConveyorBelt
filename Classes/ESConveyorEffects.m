@@ -13,9 +13,9 @@
 
 }
 
-- (UICollectionViewLayoutAttributes *)getAttributesForPage:(NSUInteger)page atOffset:(CGPoint)offset pageWidth:(CGSize)pageSize index:(NSInteger)index progress:(CGFloat)progress element:(ESConveyorElement *)element
+- (UICollectionViewLayoutAttributes *)getAttributesForPage:(NSUInteger)page atOffset:(CGPoint)offset pageWidth:(CGSize)pageSize index:(NSUInteger)index progress:(CGFloat)progress element:(ESConveyorElement *)element
 {
-    UICollectionViewLayoutAttributes *attr = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:@"ESConveyorElement" withIndexPath:[NSIndexPath indexPathForItem:index inSection:0]];
+    UICollectionViewLayoutAttributes *attr = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:@"ESConveyorElement" withIndexPath:[NSIndexPath indexPathForItem:(NSInteger)index inSection:0]];
     attr.center = CGPointMake(offset.x + element.center.x, offset.y + element.center.y);
     attr.size = element.size;
     attr.alpha = 1;
@@ -108,10 +108,10 @@
 }
 
 
-- (void)doParallax:(NSUInteger)page pageSize:(CGSize)pageSize progress:(CGFloat)progress attr:(UICollectionViewLayoutAttributes *)attr ratio:(CGFloat)speed direction:(BOOL)exiting   element:(ESConveyorElement *)element
+- (void)doParallax:(NSUInteger)page pageSize:(CGSize)pageSize progress:(CGFloat)progress attr:(UICollectionViewLayoutAttributes *)attr ratio:(CGFloat)speed direction:(BOOL)exiting element:(ESConveyorElement *)element
 {
     CGFloat pixelsPerPage = pageSize.width / speed;
-    CGFloat pixelsToMove = (page - element.inPage) * pixelsPerPage;
+    CGFloat pixelsToMove = ((NSInteger)page - element.inPage) * pixelsPerPage;
     pixelsToMove = pixelsToMove - ( (pixelsPerPage * (1-progress)) * (exiting ? -1 : 1 ));
 
     CGPoint newCenter = attr.center;

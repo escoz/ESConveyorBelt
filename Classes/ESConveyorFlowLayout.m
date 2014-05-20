@@ -82,7 +82,7 @@
                                                                              index:[elements indexOfObject:element]
                                                                           progress:progress
                                                                            element:element];
-        attr.zIndex = zIndex+1;
+        attr.zIndex = (NSInteger)zIndex+1;
         [items addObject:attr];
         [self.processedElements addObject:element];
 
