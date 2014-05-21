@@ -6,6 +6,7 @@
 #import "ESConveyorElement.h"
 #import "ESConveyorBelt.h"
 
+NSString *const ESConveyorElementKind = @"ESConveyorElement";
 
 @implementation ESConveyorElement
 {
@@ -92,7 +93,7 @@
     return element;
 }
 
-- (void)setPage:(NSUInteger)page
+- (void)setPage:(NSInteger)page
 {
     self.inPage = page;
     self.outPage = page;
@@ -101,6 +102,11 @@
 - (void)updateForPage:(NSUInteger)page totalPages:(NSInteger)pages progress:(CGFloat)progress offset:(CGPoint)offset
 {
     // do nothing
+}
+
+- (BOOL)isVisibleInPage:(NSUInteger)page
+{
+    return page >= self.inPage && page <= self.outPage + 1;
 }
 
 @end

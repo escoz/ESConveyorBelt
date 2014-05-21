@@ -5,6 +5,7 @@
 
 #import "ESConveyorView.h"
 #import "ESConveyorElement.h"
+#import "ESConveyorBeltAttributes.h"
 
 
 @interface ESConveyorView ()
@@ -16,24 +17,22 @@
 
 }
 
-- (void)setCarrousselObject:(ESConveyorElement *)object
+- (void)setCurrentView:(UIView *)currentView
 {
-    self.backgroundColor = object.color;
-    if (self.currentView==object.view)
-        return;
+    if (_currentView!=nil)
+        [_currentView removeFromSuperview];
 
-    [object.view removeFromSuperview];
-    self.currentView = object.view;
-    [self addSubview:object.view];
-    [self bringSubviewToFront:object.view];
+    _currentView = currentView;
+
+    [self addSubview:_currentView];
+    [self setNeedsLayout];
 }
 
-- (void)prepareForReuse
+- (void)applyLayoutAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes
 {
-    [super prepareForReuse];
-
-    [self.currentView removeFromSuperview];
-    self.currentView = nil;
+    ESConveyorBeltAttributes *attrs = (ESConveyorBeltAttributes *) layoutAttributes;
+    [super applyLayoutAttributes:layoutAttributes];
+    self.currentView = attrs.element.view;
 }
 
 @end

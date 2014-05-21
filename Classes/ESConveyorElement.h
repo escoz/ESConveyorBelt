@@ -6,6 +6,8 @@
 #import <Foundation/Foundation.h>
 
 
+extern NSString *const ESConveyorElementKind;
+
 @interface ESConveyorElement : NSObject
 
 @property(nonatomic) CGSize size;
@@ -33,7 +35,9 @@
 - (void)setEffects:(NSArray *)effects;
 
 - (void)setInEffects:(NSArray *)inEffects outEffects:(NSArray *)effects;
-- (void)setPage:(NSUInteger)page;
+- (void)setPage:(NSInteger)page;
 
 - (void)updateForPage:(NSUInteger)page totalPages:(NSInteger)pages progress:(CGFloat)progress offset:(CGPoint)offset;
+
+- (BOOL)isVisibleInPage:(NSUInteger)page;
 @end

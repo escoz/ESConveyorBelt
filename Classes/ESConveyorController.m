@@ -32,9 +32,10 @@
 }
 
 
-- (void)nextPageAction
+- (void)scrollToNextPage
 {
-    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:self.currentScrollPage+1] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+    NSIndexPath *path = [NSIndexPath indexPathForItem:0 inSection:self.currentScrollPage+1];
+    [self.collectionView scrollToItemAtIndexPath:path atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
 }
 
 - (NSInteger)currentScrollPage

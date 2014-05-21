@@ -57,10 +57,12 @@ NSString *kESConveyorCell = @"ESConveyorCell";
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
-    ESConveyorView *view = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:ESConveyorElementReuseIdentifier forIndexPath:indexPath];
-    ESConveyorElement *obj = [self.elements objectAtIndex:(NSUInteger) indexPath.row];
-    [view setCarrousselObject:obj];
-    return view;
+    if ([ESConveyorElementKind isEqualToString:kind]) {
+        return [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:ESConveyorElementReuseIdentifier forIndexPath:indexPath];
+    }
+
+    NSAssert(NO, @"This should never happen");
+    return nil;
 }
 
 

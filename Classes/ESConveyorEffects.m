@@ -6,6 +6,7 @@
 #import "ESConveyorEffects.h"
 #import "ESConveyorBelt.h"
 #import "ESConveyorElement.h"
+#import "ESConveyorBeltAttributes.h"
 
 
 @implementation ESConveyorEffects
@@ -15,8 +16,9 @@
 
 - (UICollectionViewLayoutAttributes *)getAttributesForPage:(NSUInteger)page atOffset:(CGPoint)offset pageWidth:(CGSize)pageSize index:(NSUInteger)index progress:(CGFloat)progress element:(ESConveyorElement *)element
 {
-    UICollectionViewLayoutAttributes *attr = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:@"ESConveyorElement" withIndexPath:[NSIndexPath indexPathForItem:(NSInteger)index inSection:0]];
+    ESConveyorBeltAttributes *attr = [ESConveyorBeltAttributes layoutAttributesForSupplementaryViewOfKind:ESConveyorElementKind withIndexPath:[NSIndexPath indexPathForItem:(NSInteger) index inSection:0]];
     attr.center = CGPointMake(offset.x + element.center.x, offset.y + element.center.y);
+    attr.element = element;
     attr.size = element.size;
     attr.alpha = 1;
 

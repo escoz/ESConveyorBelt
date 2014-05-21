@@ -35,8 +35,8 @@
 {
     [super updateForPage:page totalPages:numberOfPages progress:progress offset:offset];
 
-    NSInteger newPage = progress > 0.5f? page : page - 1;
-    self.pageControl.currentPage = newPage <= 0 ? 0 : newPage;
+    NSUInteger newPage = progress > 0.5f? page : page - 1;
+    self.pageControl.currentPage = newPage <= 0 ? 0 : (NSInteger)newPage;
     self.pageControl.numberOfPages = numberOfPages;
 }
 

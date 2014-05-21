@@ -62,15 +62,12 @@
 
 - (void)createDecorationItems:(NSMutableArray *)items page:(NSUInteger)page offset:(CGPoint)offset elements:(NSArray *)elements
 {
+    NSInteger zIndex = 0;
     for (ESConveyorElement *element in elements)
     {
-        NSUInteger zIndex = self.processedElements.count;
         CGFloat progress = [self pageTransitionProgressForPage:page];
 
-        if ([self.processedElements containsObject:element])
-            continue;
-
-        BOOL showItem = page >= element.inPage && page <= element.outPage + 1;
+        BOOL showItem = [element isVisibleInPage:page];
         if (!showItem)
             continue;
 
@@ -84,7 +81,8 @@
                                                                            element:element];
         attr.zIndex = (NSInteger)zIndex+1;
         [items addObject:attr];
-        [self.processedElements addObject:element];
+
+        zIndex ++;
 
     }
 }
