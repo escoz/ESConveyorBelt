@@ -23,18 +23,18 @@
 		5C50EAB26898A9B50D104EB3 /* goldengate@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C50EEE2F4E2C5A6F63B4566 /* goldengate@2x.jpg */; };
 		5C50EB8EE309B5C2B82132C7 /* bacon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C50E6E2CC543456CC0011A5 /* bacon@2x.png */; };
 		5C50EFCA4A224E244BB725A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C50E8D24FC729943FB5C7E9 /* InfoPlist.strings */; };
+		934784B31933D13800E02A72 /* ESConveyorAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 934784A11933D13800E02A72 /* ESConveyorAdapter.m */; };
+		934784B41933D13800E02A72 /* ESConveyorBeltAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 934784A41933D13800E02A72 /* ESConveyorBeltAttributes.m */; };
+		934784B51933D13800E02A72 /* ESConveyorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 934784A61933D13800E02A72 /* ESConveyorController.m */; };
+		934784B61933D13800E02A72 /* ESConveyorEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 934784A81933D13800E02A72 /* ESConveyorEffects.m */; };
+		934784B71933D13800E02A72 /* ESConveyorElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 934784AA1933D13800E02A72 /* ESConveyorElement.m */; };
+		934784B81933D13800E02A72 /* ESConveyorFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 934784AC1933D13800E02A72 /* ESConveyorFlowLayout.m */; };
+		934784B91933D13800E02A72 /* ESConveyorPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 934784AE1933D13800E02A72 /* ESConveyorPageCell.m */; };
+		934784BA1933D13800E02A72 /* ESConveyorPageControlElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 934784B01933D13800E02A72 /* ESConveyorPageControlElement.m */; };
+		934784BB1933D13800E02A72 /* ESConveyorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 934784B21933D13800E02A72 /* ESConveyorView.m */; };
 		D813CF5C19282F3600DC2A9B /* ESConveyorSample1Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = D813CF5719282F3600DC2A9B /* ESConveyorSample1Builder.m */; };
 		D813CF5D19282F3600DC2A9B /* ESConveyorSample2Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = D813CF5919282F3600DC2A9B /* ESConveyorSample2Builder.m */; };
 		D813CF5E19282F3600DC2A9B /* ESConveyorSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D813CF5B19282F3600DC2A9B /* ESConveyorSampleViewController.m */; };
-		D84253C7192C2A8900A53D3C /* ESConveyorAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D84253B5192C2A8900A53D3C /* ESConveyorAdapter.m */; };
-		D84253C8192C2A8900A53D3C /* ESConveyorBeltAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = D84253B8192C2A8900A53D3C /* ESConveyorBeltAttributes.m */; };
-		D84253C9192C2A8900A53D3C /* ESConveyorController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84253BA192C2A8900A53D3C /* ESConveyorController.m */; };
-		D84253CA192C2A8900A53D3C /* ESConveyorEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = D84253BC192C2A8900A53D3C /* ESConveyorEffects.m */; };
-		D84253CB192C2A8900A53D3C /* ESConveyorElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D84253BE192C2A8900A53D3C /* ESConveyorElement.m */; };
-		D84253CC192C2A8900A53D3C /* ESConveyorFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D84253C0192C2A8900A53D3C /* ESConveyorFlowLayout.m */; };
-		D84253CD192C2A8900A53D3C /* ESConveyorPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D84253C2192C2A8900A53D3C /* ESConveyorPageCell.m */; };
-		D84253CE192C2A8900A53D3C /* ESConveyorPageControlElement.m in Sources */ = {isa = PBXBuildFile; fileRef = D84253C4192C2A8900A53D3C /* ESConveyorPageControlElement.m */; };
-		D84253CF192C2A8900A53D3C /* ESConveyorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D84253C6192C2A8900A53D3C /* ESConveyorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,31 +58,31 @@
 		5C50ED813768FE7022AA4E8C /* ESConveyorBeltSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ESConveyorBeltSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C50EE81817E3B23B30CB063 /* ESConveyorBeltSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ESConveyorBeltSample-Info.plist"; sourceTree = "<group>"; };
 		5C50EEE2F4E2C5A6F63B4566 /* goldengate@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "goldengate@2x.jpg"; sourceTree = "<group>"; };
+		934784A01933D13800E02A72 /* ESConveyorAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorAdapter.h; sourceTree = "<group>"; };
+		934784A11933D13800E02A72 /* ESConveyorAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorAdapter.m; sourceTree = "<group>"; };
+		934784A21933D13800E02A72 /* ESConveyorBelt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorBelt.h; sourceTree = "<group>"; };
+		934784A31933D13800E02A72 /* ESConveyorBeltAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorBeltAttributes.h; sourceTree = "<group>"; };
+		934784A41933D13800E02A72 /* ESConveyorBeltAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorBeltAttributes.m; sourceTree = "<group>"; };
+		934784A51933D13800E02A72 /* ESConveyorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorController.h; sourceTree = "<group>"; };
+		934784A61933D13800E02A72 /* ESConveyorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorController.m; sourceTree = "<group>"; };
+		934784A71933D13800E02A72 /* ESConveyorEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorEffects.h; sourceTree = "<group>"; };
+		934784A81933D13800E02A72 /* ESConveyorEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorEffects.m; sourceTree = "<group>"; };
+		934784A91933D13800E02A72 /* ESConveyorElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorElement.h; sourceTree = "<group>"; };
+		934784AA1933D13800E02A72 /* ESConveyorElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorElement.m; sourceTree = "<group>"; };
+		934784AB1933D13800E02A72 /* ESConveyorFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorFlowLayout.h; sourceTree = "<group>"; };
+		934784AC1933D13800E02A72 /* ESConveyorFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorFlowLayout.m; sourceTree = "<group>"; };
+		934784AD1933D13800E02A72 /* ESConveyorPageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorPageCell.h; sourceTree = "<group>"; };
+		934784AE1933D13800E02A72 /* ESConveyorPageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorPageCell.m; sourceTree = "<group>"; };
+		934784AF1933D13800E02A72 /* ESConveyorPageControlElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorPageControlElement.h; sourceTree = "<group>"; };
+		934784B01933D13800E02A72 /* ESConveyorPageControlElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorPageControlElement.m; sourceTree = "<group>"; };
+		934784B11933D13800E02A72 /* ESConveyorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorView.h; sourceTree = "<group>"; };
+		934784B21933D13800E02A72 /* ESConveyorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorView.m; sourceTree = "<group>"; };
 		D813CF5619282F3600DC2A9B /* ESConveyorSample1Builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorSample1Builder.h; sourceTree = "<group>"; };
 		D813CF5719282F3600DC2A9B /* ESConveyorSample1Builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorSample1Builder.m; sourceTree = "<group>"; };
 		D813CF5819282F3600DC2A9B /* ESConveyorSample2Builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorSample2Builder.h; sourceTree = "<group>"; };
 		D813CF5919282F3600DC2A9B /* ESConveyorSample2Builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorSample2Builder.m; sourceTree = "<group>"; };
 		D813CF5A19282F3600DC2A9B /* ESConveyorSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESConveyorSampleViewController.h; sourceTree = "<group>"; };
 		D813CF5B19282F3600DC2A9B /* ESConveyorSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESConveyorSampleViewController.m; sourceTree = "<group>"; };
-		D84253B4192C2A8900A53D3C /* ESConveyorAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESConveyorAdapter.h; path = ../../../../classifieds/iosebayclass/ebcmaster/Application/OptionalFeatures/ESConveyorBelt/ESConveyorAdapter.h; sourceTree = "<group>"; };
-		D84253B5192C2A8900A53D3C /* ESConveyorAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ESConveyorAdapter.m; path = ../../../../classifieds/iosebayclass/ebcmaster/Application/OptionalFeatures/ESConveyorBelt/ESConveyorAdapter.m; sourceTree = "<group>"; };
-		D84253B6192C2A8900A53D3C /* ESConveyorBelt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESConveyorBelt.h; path = ../../../../classifieds/iosebayclass/ebcmaster/Application/OptionalFeatures/ESConveyorBelt/ESConveyorBelt.h; sourceTree = "<group>"; };
-		D84253B7192C2A8900A53D3C /* ESConveyorBeltAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESConveyorBeltAttributes.h; path = ../../../../classifieds/iosebayclass/ebcmaster/Application/OptionalFeatures/ESConveyorBelt/ESConveyorBeltAttributes.h; sourceTree = "<group>"; };
-		D84253B8192C2A8900A53D3C /* ESConveyorBeltAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ESConveyorBeltAttributes.m; path = ../../../../classifieds/iosebayclass/ebcmaster/Application/OptionalFeatures/ESConveyorBelt/ESConveyorBeltAttributes.m; sourceTree = "<group>"; };
-		D84253B9192C2A8900A53D3C /* ESConveyorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESConveyorController.h; path = ../../../../classifieds/iosebayclass/ebcmaster/Application/OptionalFeatures/ESConveyorBelt/ESConveyorController.h; sourceTree = "<group>"; };
-		D84253BA192C2A8900A53D3C /* ESConveyorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ESConveyorController.m; path = ../../../../classifieds/iosebayclass/ebcmaster/Application/OptionalFeatures/ESConveyorBelt/ESConveyorController.m; sourceTree = "<group>"; };
-		D84253BB192C2A8900A53D3C /* ESConveyorEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESConveyorEffects.h; path = ../../../../classifieds/iosebayclass/ebcmaster/Application/OptionalFeatures/ESConveyorBelt/ESConveyorEffects.h; sourceTree = "<group>"; };
-		D84253BC192C2A8900A53D3C /* ESConveyorEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ESConveyorEffects.m; path = ../../../../classifieds/iosebayclass/ebcmaster/Application/OptionalFeatures/ESConveyorBelt/ESConveyorEffects.m; sourceTree = "<group>"; };
-		D84253BD192C2A8900A53D3C /* ESConveyorElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESConveyorElement.h; path = ../../../../classifieds/iosebayclass/ebcmaster/Application/OptionalFeatures/ESConveyorBelt/ESConveyorElement.h; sourceTree = "<group>"; };
-		D84253BE192C2A8900A53D3C /* ESConveyorElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ESConveyorElement.m; path = ../../../../classifieds/iosebayclass/ebcmaster/Application/OptionalFeatures/ESConveyorBelt/ESConveyorElement.m; sourceTree = "<group>"; };
-		D84253BF192C2A8900A53D3C /* ESConveyorFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESConveyorFlowLayout.h; path = ../../../../classifieds/iosebayclass/ebcmaster/Application/OptionalFeatures/ESConveyorBelt/ESConveyorFlowLayout.h; sourceTree = "<group>"; };
-		D84253C0192C2A8900A53D3C /* ESConveyorFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ESConveyorFlowLayout.m; path = ../../../../classifieds/iosebayclass/ebcmaster/Application/OptionalFeatures/ESConveyorBelt/ESConveyorFlowLayout.m; sourceTree = "<group>"; };
-		D84253C1192C2A8900A53D3C /* ESConveyorPageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESConveyorPageCell.h; path = ../../../../classifieds/iosebayclass/ebcmaster/Application/OptionalFeatures/ESConveyorBelt/ESConveyorPageCell.h; sourceTree = "<group>"; };
-		D84253C2192C2A8900A53D3C /* ESConveyorPageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ESConveyorPageCell.m; path = ../../../../classifieds/iosebayclass/ebcmaster/Application/OptionalFeatures/ESConveyorBelt/ESConveyorPageCell.m; sourceTree = "<group>"; };
-		D84253C3192C2A8900A53D3C /* ESConveyorPageControlElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESConveyorPageControlElement.h; path = ../../../../classifieds/iosebayclass/ebcmaster/Application/OptionalFeatures/ESConveyorBelt/ESConveyorPageControlElement.h; sourceTree = "<group>"; };
-		D84253C4192C2A8900A53D3C /* ESConveyorPageControlElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ESConveyorPageControlElement.m; path = ../../../../classifieds/iosebayclass/ebcmaster/Application/OptionalFeatures/ESConveyorBelt/ESConveyorPageControlElement.m; sourceTree = "<group>"; };
-		D84253C5192C2A8900A53D3C /* ESConveyorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESConveyorView.h; path = ../../../../classifieds/iosebayclass/ebcmaster/Application/OptionalFeatures/ESConveyorBelt/ESConveyorView.h; sourceTree = "<group>"; };
-		D84253C6192C2A8900A53D3C /* ESConveyorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ESConveyorView.m; path = ../../../../classifieds/iosebayclass/ebcmaster/Application/OptionalFeatures/ESConveyorBelt/ESConveyorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,25 +131,25 @@
 		5C50EB15AB9524975ED7CA15 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D84253B4192C2A8900A53D3C /* ESConveyorAdapter.h */,
-				D84253B5192C2A8900A53D3C /* ESConveyorAdapter.m */,
-				D84253B6192C2A8900A53D3C /* ESConveyorBelt.h */,
-				D84253B7192C2A8900A53D3C /* ESConveyorBeltAttributes.h */,
-				D84253B8192C2A8900A53D3C /* ESConveyorBeltAttributes.m */,
-				D84253B9192C2A8900A53D3C /* ESConveyorController.h */,
-				D84253BA192C2A8900A53D3C /* ESConveyorController.m */,
-				D84253BB192C2A8900A53D3C /* ESConveyorEffects.h */,
-				D84253BC192C2A8900A53D3C /* ESConveyorEffects.m */,
-				D84253BD192C2A8900A53D3C /* ESConveyorElement.h */,
-				D84253BE192C2A8900A53D3C /* ESConveyorElement.m */,
-				D84253BF192C2A8900A53D3C /* ESConveyorFlowLayout.h */,
-				D84253C0192C2A8900A53D3C /* ESConveyorFlowLayout.m */,
-				D84253C1192C2A8900A53D3C /* ESConveyorPageCell.h */,
-				D84253C2192C2A8900A53D3C /* ESConveyorPageCell.m */,
-				D84253C3192C2A8900A53D3C /* ESConveyorPageControlElement.h */,
-				D84253C4192C2A8900A53D3C /* ESConveyorPageControlElement.m */,
-				D84253C5192C2A8900A53D3C /* ESConveyorView.h */,
-				D84253C6192C2A8900A53D3C /* ESConveyorView.m */,
+				934784A01933D13800E02A72 /* ESConveyorAdapter.h */,
+				934784A11933D13800E02A72 /* ESConveyorAdapter.m */,
+				934784A21933D13800E02A72 /* ESConveyorBelt.h */,
+				934784A31933D13800E02A72 /* ESConveyorBeltAttributes.h */,
+				934784A41933D13800E02A72 /* ESConveyorBeltAttributes.m */,
+				934784A51933D13800E02A72 /* ESConveyorController.h */,
+				934784A61933D13800E02A72 /* ESConveyorController.m */,
+				934784A71933D13800E02A72 /* ESConveyorEffects.h */,
+				934784A81933D13800E02A72 /* ESConveyorEffects.m */,
+				934784A91933D13800E02A72 /* ESConveyorElement.h */,
+				934784AA1933D13800E02A72 /* ESConveyorElement.m */,
+				934784AB1933D13800E02A72 /* ESConveyorFlowLayout.h */,
+				934784AC1933D13800E02A72 /* ESConveyorFlowLayout.m */,
+				934784AD1933D13800E02A72 /* ESConveyorPageCell.h */,
+				934784AE1933D13800E02A72 /* ESConveyorPageCell.m */,
+				934784AF1933D13800E02A72 /* ESConveyorPageControlElement.h */,
+				934784B01933D13800E02A72 /* ESConveyorPageControlElement.m */,
+				934784B11933D13800E02A72 /* ESConveyorView.h */,
+				934784B21933D13800E02A72 /* ESConveyorView.m */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -272,18 +272,18 @@
 			files = (
 				5C50E3725B462F4ED683BF46 /* main.m in Sources */,
 				D813CF5D19282F3600DC2A9B /* ESConveyorSample2Builder.m in Sources */,
-				D84253C9192C2A8900A53D3C /* ESConveyorController.m in Sources */,
-				D84253CB192C2A8900A53D3C /* ESConveyorElement.m in Sources */,
-				D84253C8192C2A8900A53D3C /* ESConveyorBeltAttributes.m in Sources */,
-				D84253CE192C2A8900A53D3C /* ESConveyorPageControlElement.m in Sources */,
-				D84253CA192C2A8900A53D3C /* ESConveyorEffects.m in Sources */,
+				934784B51933D13800E02A72 /* ESConveyorController.m in Sources */,
+				934784B71933D13800E02A72 /* ESConveyorElement.m in Sources */,
+				934784B41933D13800E02A72 /* ESConveyorBeltAttributes.m in Sources */,
+				934784BA1933D13800E02A72 /* ESConveyorPageControlElement.m in Sources */,
+				934784B61933D13800E02A72 /* ESConveyorEffects.m in Sources */,
 				D813CF5E19282F3600DC2A9B /* ESConveyorSampleViewController.m in Sources */,
-				D84253CC192C2A8900A53D3C /* ESConveyorFlowLayout.m in Sources */,
+				934784B81933D13800E02A72 /* ESConveyorFlowLayout.m in Sources */,
 				5C50E7DD22A806FDD18B9B28 /* ESAppDelegate.m in Sources */,
-				D84253CD192C2A8900A53D3C /* ESConveyorPageCell.m in Sources */,
-				D84253C7192C2A8900A53D3C /* ESConveyorAdapter.m in Sources */,
+				934784B91933D13800E02A72 /* ESConveyorPageCell.m in Sources */,
+				934784B31933D13800E02A72 /* ESConveyorAdapter.m in Sources */,
 				D813CF5C19282F3600DC2A9B /* ESConveyorSample1Builder.m in Sources */,
-				D84253CF192C2A8900A53D3C /* ESConveyorView.m in Sources */,
+				934784BB1933D13800E02A72 /* ESConveyorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
