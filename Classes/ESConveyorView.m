@@ -19,6 +19,9 @@
 
 - (void)setCurrentView:(UIView *)currentView
 {
+    if (_currentView == currentView)
+        return;
+    
     if (_currentView!=nil)
         [_currentView removeFromSuperview];
 
