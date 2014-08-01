@@ -9,7 +9,6 @@
 
 
 @interface ESConveyorView ()
-@property(nonatomic, strong) UIView *currentView;
 @end
 
 @implementation ESConveyorView
@@ -19,15 +18,11 @@
 
 - (void)setCurrentView:(UIView *)currentView
 {
-    if (_currentView == currentView)
-        return;
-    
-    if (_currentView!=nil)
-        [_currentView removeFromSuperview];
+    for (UIView *view in self.subviews)
+        [view removeFromSuperview];
 
-    _currentView = currentView;
 
-    [self addSubview:_currentView];
+    [self addSubview:currentView];
     [self setNeedsLayout];
 }
 
