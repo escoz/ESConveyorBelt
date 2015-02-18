@@ -59,6 +59,12 @@ NSString *const ESConveyorElementKind = @"ESConveyorElement";
     return result;
 }
 
+- (void)setSize:(CGSize)size
+{
+    _size = size;
+    self.view.frame = CGRectMake(0, 0, size.width, size.height);
+}
+
 
 + (ESConveyorElement *)elementForLabelOfClass:(Class)pClass text:(NSString *)text center:(CGPoint)center size:(CGSize)size
 {

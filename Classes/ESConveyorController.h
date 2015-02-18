@@ -14,4 +14,6 @@
 - (id)initWithPages:(NSInteger)numberOfPages elements:(NSArray *)elements;
 
 - (void)scrollToNextPage;
+
+- (void)scrollToPage:(NSInteger)page animated:(BOOL)animated;
 @end

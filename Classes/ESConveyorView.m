@@ -21,7 +21,6 @@
     for (UIView *view in self.subviews)
         [view removeFromSuperview];
 
-
     [self addSubview:currentView];
     [self setNeedsLayout];
 }

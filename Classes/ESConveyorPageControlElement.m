@@ -7,7 +7,7 @@
 
 
 @interface ESConveyorPageControlElement ()
-@property(nonatomic, strong) UIPageControl *pageControl;
+
 @end
 
 @implementation ESConveyorPageControlElement
@@ -19,9 +19,9 @@
     if (self = [super init])
     {
         self.center = center;
-        self.size = CGSizeMake(300, 44);
+        self.size = CGSizeMake(900, 44);
 
-        self.pageControl = [pClass new];
+        self.pageControl = (UIPageControl *) [pClass new];
         self.pageControl.frame = CGRectMake(0, 0, self.size.width, self.size.height);
         self.pageControl.numberOfPages = 10;
         self.pageControl.currentPage = 1;

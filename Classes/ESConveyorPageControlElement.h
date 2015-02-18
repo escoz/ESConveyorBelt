@@ -10,5 +10,7 @@
 
 @interface ESConveyorPageControlElement : ESConveyorElement
 
+@property(nonatomic, strong) UIPageControl *pageControl;
+
 - (id)initWithClass:(Class)pClass center:(CGPoint)center;
 @end

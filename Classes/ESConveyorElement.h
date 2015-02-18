@@ -29,6 +29,8 @@ extern NSString *const ESConveyorElementKind;
 
 + (ESConveyorElement *)elementForImage:(UIImage *)image center:(CGPoint)center;
 
++ (ESConveyorElement *)elementForView:(UIView *)view center:(CGPoint)center;
+
 + (ESConveyorElement *)elementForButtonOfClass:(Class)pClass title:(NSString *)title target:(id)target action:(SEL)action center:(CGPoint)center;
 + (ESConveyorElement *)elementForLabelOfClass:(Class)pClass text:(NSString *)text center:(CGPoint)center size:(CGSize)size;
 

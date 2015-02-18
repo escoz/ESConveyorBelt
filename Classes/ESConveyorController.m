@@ -34,8 +34,7 @@
 
 - (void)scrollToNextPage
 {
-    NSIndexPath *path = [NSIndexPath indexPathForItem:0 inSection:self.currentScrollPage+1];
-    [self.collectionView scrollToItemAtIndexPath:path atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
+    [self scrollToPage:(int)self.currentScrollPage + 1 animated:YES];
 }
 
 - (NSInteger)currentScrollPage
@@ -43,4 +42,9 @@
     return (NSInteger) roundf(self.collectionView.contentOffset.x/self.collectionView.bounds.size.width);
 }
 
+- (void)scrollToPage:(NSInteger)page animated:(BOOL)animated
+{
+    NSIndexPath *path = [NSIndexPath indexPathForItem:0 inSection:page];
+    [self.collectionView scrollToItemAtIndexPath:path atScrollPosition:UICollectionViewScrollPositionLeft animated:animated];
+}
 @end
