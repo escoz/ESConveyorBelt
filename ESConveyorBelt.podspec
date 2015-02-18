@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ESConveyorBelt"
-  s.version          = "0.3.0"
+  s.version          = "1.0.0"
   s.summary          = "Create nice tutorial pages with parallax and animations with ease"
   s.description      = <<-DESC
                        ESConveyorBelt is a UICollectionView subclass that allows you to 
